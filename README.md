@@ -1,4 +1,4 @@
-# prr
+# PRR
 
 `prr` is a Neovim plugin that integrates with the GitHub CLI (`gh`) and [Diffview.nvim](https://github.com/sindrets/diffview.nvim) to streamline common GitHub and Git workflows directly in your editor.
 
@@ -10,7 +10,7 @@ This plugin provides a collection of commands and features, including pull reque
 
 ### Requirements
 
-- [GitHub CLI (`gh`)](https://cli.github.com/) installed and authenticated.
+- [GitHub CLI (`gh`)](https://cli.github.com/)  installed and authenticated.
 - [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [Diffview.nvim](https://github.com/sindrets/diffview.nvim)
@@ -19,7 +19,7 @@ This plugin provides a collection of commands and features, including pull reque
 
 ```lua
 {
-    "Jonathan-Rowles/prr", -- Update with the actual location of the plugin
+    "Jonathan-Rowles/prr",
     dependencies = {
         "nvim-lua/plenary.nvim",
         "nvim-telescope/telescope.nvim",
@@ -27,8 +27,7 @@ This plugin provides a collection of commands and features, including pull reque
     },
     config = function()
         require("gh-cli").setup()
-    end,
-    event = "VeryLazy",
+    end
 }
 ```
 
